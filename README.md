@@ -1,2 +1,2 @@
-# fluidsynth-win-build
+# fluidsynth-build
 FluidSynth prebuilt binaries.
