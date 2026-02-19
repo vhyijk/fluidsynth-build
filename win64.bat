@@ -10,7 +10,7 @@ set __fluidsynth_prefix__=C:/Program Files/fluidsynth
 set CC=clang-cl
 set CXX=clang-cl
 set LD=lld-link
-set __cflags__=/D_CRT_SECURE_NO_WARNINGS /DNDEBUG /D_WIN64 /O2 /Ob2 /Oi /Ot /Gw /Gy /w -fms-extensions -fms-compatibility -Wall -O3 -march=native -flto -fwhole-program-vtables -fuse-ld=lld
+set __cflags__=/D_CRT_SECURE_NO_WARNINGS /DNDEBUG /D_WIN64 /O2 /Ob2 /Oi /Ot /Gw /Gy /w -fms-extensions -fms-compatibility -Wall -O3 -march=native -mtune=native -mno-avx512f -flto -fwhole-program-vtables -fuse-ld=lld
 set CFLAGS=%__cflags__% /std:clatest
 set CXXFLAGS=%__cflags__% /EHsc /std:c++latest
 set LDFLAGS=/LTCG /OPT:REF /OPT:ICF /MACHINE:X64
