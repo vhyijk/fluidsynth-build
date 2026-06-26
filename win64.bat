@@ -91,7 +91,7 @@ if not "%errorlevel%"=="0" (
 set __fluidsynth_b__=..\b\fluidsynth
 cd /d fluidsynth
 cmake -G Ninja -B "%__fluidsynth_b__%"
-cmake -B "%__fluidsynth_b__%" -DCMAKE_BUILD_TYPE=%CMAKE_BUILD_TYPE% -DBUILD_SHARED_LIBS=OFF -Denable-dbus=OFF -Denable-dsound=OFF -Denable-jack=OFF -Denable-ladspa=OFF -Denable-libinstpatch=OFF -Denable-limiter=OFF -Denable-midishare=OFF -Denable-network=OFF -Denable-openmp=OFF -Denable-pulseaudio=OFF -Denable-readline=OFF -Denable-sdl3=OFF -Denable-waveout=OFF -Dosal=cpp11 "-DDEFAULT_SOUNDFONT=C:\\Windows\\System32\\drivers\\gm.dls" "-DCMAKE_INSTALL_PREFIX=%__fluidsynth_prefix__%"
+cmake -B "%__fluidsynth_b__%" -DCMAKE_BUILD_TYPE=%CMAKE_BUILD_TYPE% -DBUILD_SHARED_LIBS=OFF -Denable-dbus=OFF -Denable-dsound=OFF -Denable-jack=OFF -Denable-ladspa=OFF -Denable-libinstpatch=OFF -Denable-signalsmith=OFF -Denable-midishare=OFF -Denable-network=OFF -Denable-openmp=OFF -Denable-pulseaudio=OFF -Denable-readline=OFF -Denable-sdl3=OFF -Denable-waveout=OFF -Dosal=cpp11 "-DDEFAULT_SOUNDFONT=C:\\Windows\\System32\\drivers\\gm.dls" "-DCMAKE_INSTALL_PREFIX=%__fluidsynth_prefix__%"
 cmake -B "%__fluidsynth_b__%" "-DSndFile_DIR=%__libsndfile_prefix__%/cmake"
 cd /d "%__fluidsynth_b__%"
 %__cmake_install__%
